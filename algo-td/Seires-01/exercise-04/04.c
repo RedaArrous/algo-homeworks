@@ -8,9 +8,15 @@ int main() {
 	printf("enter three numbers a, b and c: \n");
 	scanf("%lf%lf%lf", &a, &b, &c);
 	printf("the equation is: %lfx^2 + %lfx + %lf\n", a, b, c);
-	deltaa = (b * b) - (4 * a * c);
-	if (a != 0 && b !=0 && c != 0) {
-            if (deltaa > 0)
+	if (a == 0 && b ==0 && c == 0) {
+        printf("this is not an equation 0 = 0");
+    }
+    else if ( a == 0 ){
+        printf("a first degree equation x = %lf002" , -c / b);
+    } 
+    else {
+        deltaa = (b * b) - (4 * a * c);
+        if (deltaa > 0)
         {
             x = (-b + sqrt(deltaa)) / (2 * a);
             printf("we have x1 = %lf\n", x);
@@ -24,9 +30,6 @@ int main() {
         else {
             printf("there is no solution for the equation");
         }
-    }
-    else{
-        printf("this is not an equation, 0 = 0");
     }
 }
 
