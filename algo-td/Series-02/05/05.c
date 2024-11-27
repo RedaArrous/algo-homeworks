@@ -1,13 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 int main(){
-    int posi, three;
+    int n;
     do {
-        printf("enter a positive number: ");
-        scanf("%d", &posi);
-    }while(posi < 0);
-    do {
-        printf("enter number multiple of 3: ");
-        scanf("%d", &three);
-    }while(three % 3 != 0);
+        printf("enter a positive multiple of 3 number: ");
+        scanf("%d", &n);
+    }while( n < 0 || n % 3 != 0);
+    printf("correct");
 }
+
