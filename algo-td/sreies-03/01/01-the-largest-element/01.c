@@ -10,7 +10,7 @@ int main(){
         {
             largest = a[i];
         }
-        else if (a[i] <= a[i + 1])
+        else
         {
             largest = a[i + 1];
         }
