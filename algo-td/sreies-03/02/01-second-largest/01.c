@@ -2,21 +2,17 @@
 #include <stdlib.h>
 int main(){
     int sl, l;
-    int a[5] = {1, 1, 1, 0, 1};
-    for(int i = 0; i < 5; i++){
-        if(i == 0){ // this condition is for initializing sl and l
-            if(a[i] > a[i + 1]){
-                l = a[i];
-                sl = a[i + 1];
-            }else if(a[i] < a[i + 1]) {
-                l = a[i + 1];
-                sl = a[i];
+    int a[5] = {1, 1, 1, 1, 1};
+    if(a[0] > a[1]){
+                l = a[0];
+                sl = a[1];
+            }else if(a[0] < a[1]) {
+                l = a[1];
+                sl = a[0];
             }else {
-                l = sl = a[i];
+                l = sl = a[0];
             }
-            i++;
-            continue;
-        }
+    for(int i = 2; i < 5; i++){
         if(a[i] > l){
             sl = l;
             l = a[i];
