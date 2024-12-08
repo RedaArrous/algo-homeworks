@@ -1,1 +1,0 @@
-I don't understand the meaning of "merge" here so i'm not doing this exercise but i think we should use the matrix.
